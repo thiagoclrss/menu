@@ -20,4 +20,9 @@ public class Food {
     private String image;
     private Integer price;
 
+    public Food(FoodRequestDTO data) {
+        this.title = data.title();
+        this.image = data.image();
+        this.price = data.price();
+    }
 }
